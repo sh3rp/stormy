@@ -1,0 +1,15 @@
+apply plugin : 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.apache.storm/storm-core
+    compile group: 'org.apache.storm', name: 'storm-core', version: '1.0.2'
+    // https://mvnrepository.com/artifact/io.nats/jnats
+    compile group: 'io.nats', name: 'jnats', version: '0.7.3'
+    // https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java
+    compile group: 'com.google.protobuf', name: 'protobuf-java', version: '3.1.0'
+    compile group: 'junit', name: 'junit', version: '4.12'
+}
